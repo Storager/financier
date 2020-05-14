@@ -8,7 +8,7 @@ RUN npm install
 RUN npm run build
 
 
-FROM node:8 AS Stage 2
+FROM node:8 AS Stage2
 
 WORKDIR /financier
 RUN npm install express@^4.13.0 helmet@^3.10.0 uuid helmet-csp@^2.7.0 cheerio@^0.22.0
