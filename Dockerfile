@@ -19,7 +19,7 @@ COPY --from=Stage1 /app/api ./api
 
 WORKDIR /financier/api
 
-EXPOSE 8080
+ENV PORT 8080
 
 # RUN apt-get install -y git-core
 
